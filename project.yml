@@ -1,0 +1,114 @@
+name: Ego
+configFiles:
+  Debug: Config/Ego.xcconfig
+  Release: Config/Ego.xcconfig
+options:
+  developmentLanguage: en
+  knownRegions: [en, ru]
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "27.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    CODE_SIGN_STYLE: Automatic
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+packages:
+  FluidAudio:
+    path: Vendor/FluidAudio
+  WhisperKit:
+    path: Vendor/WhisperKit
+  MLXLM:
+    path: Vendor/MLXLM
+  ZIPFoundation:
+    url: https://github.com/weichsel/ZIPFoundation
+    from: 0.9.20
+targets:
+  Ego:
+    type: application
+    platform: iOS
+    sources: [Ego]
+    supportedDestinations: [iOS]
+    dependencies:
+      - package: FluidAudio
+      - package: WhisperKit
+        product: WhisperKit
+      - package: MLXLM
+        product: MLXLLM
+      - package: MLXLM
+        product: MLXLMCommon
+      - package: ZIPFoundation
+      - target: EgoWidgets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(EGO_BUNDLE_ID_PREFIX).ego
+        INFOPLIST_FILE: Ego/Resources/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_ENTITLEMENTS: Ego/Resources/Ego.entitlements
+  EgoWidgets:
+    type: app-extension
+    platform: iOS
+    sources: [EgoWidgets]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(EGO_BUNDLE_ID_PREFIX).ego.widgets
+        INFOPLIST_FILE: EgoWidgets/Info.plist
+        SKIP_INSTALL: YES
+  EgoTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [EgoTests]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: $(EGO_BUNDLE_ID_PREFIX).EgoTests
+    dependencies:
+      - target: Ego
+  EgoUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [EgoUITests]
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: $(EGO_BUNDLE_ID_PREFIX).EgoUITests
+    dependencies:
+      - target: Ego
+  EgoModelCheck:
+    type: tool
+    platform: macOS
+    deploymentTarget: "14.0"
+    sources:
+      - Tools/ModelCheck
+      - Ego/Domain/Journal.swift
+      - Ego/Domain/Localization.swift
+      - Ego/Services/ModelLibrary.swift
+      - Ego/Services/LocalIntelligence.swift
+    dependencies:
+      - package: FluidAudio
+      - package: WhisperKit
+        product: WhisperKit
+      - package: MLXLM
+        product: MLXLLM
+      - package: MLXLM
+        product: MLXLMCommon
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: $(EGO_BUNDLE_ID_PREFIX).ego.modelcheck
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  Ego:
+    build:
+      targets:
+        Ego: all
+        EgoWidgets: all
+    test:
+      targets: [EgoTests, EgoUITests]
+
+  EgoModelCheck:
+    build:
+      targets:
+        EgoModelCheck: all

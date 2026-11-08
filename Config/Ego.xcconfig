@@ -1,0 +1,10 @@
+// Shared build settings for every Ego target.
+//
+// The bundle identifier prefix and the signing team are deliberately neutral here.
+// To build on a device, copy Config/Local.xcconfig.example to Config/Local.xcconfig
+// (ignored by Git) and put your own values there; they override the ones below.
+
+EGO_BUNDLE_ID_PREFIX = com.example
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"

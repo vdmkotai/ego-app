@@ -1,0 +1,1090 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		109E7A37AFB724C0C1302917 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ADB98AFECED9A3E01C74E5 /* SettingsView.swift */; };
+		10D386CDE0029F2A00E34476 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9266D2CC2ED7B7E2D26249 /* AudioRecorder.swift */; };
+		18FBAA1672E500B0611037B1 /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 0D9D6AAEE2CAF335F00C6C9A /* MLXLLM */; };
+		1DAD543318CB3CA4A74E262E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395170CA1CC3298E65BAD0B2 /* Assets.xcassets */; };
+		1E2DF5B27BB39FF6CA758989 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E134EA3BCA16877B63756BBE /* InfoPlist.strings */; };
+		2184883F8E936B53CCA6593F /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 5745757CF2827D163ACE0CE6 /* FluidAudio */; };
+		22560D8767FF758161D20D94 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = CE7ECB25DF0A8640A9C5C964 /* ZIPFoundation */; };
+		26837C6CA192059A8E1BDB74 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E225C0A642C17B72EDCDAB /* EntryView.swift */; };
+		31EB0E88D51B26C7FD8F9C80 /* JournalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6391EE509DE998E0AB95AFE /* JournalStore.swift */; };
+		36EEE08E16B74E9A1BC195EE /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 659CEB3B92E5114A0E11AC72 /* MLXLMCommon */; };
+		43F5C9BD28F759CEF6EA530D /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332D82B666B0DD3DBC7D9179 /* Journal.swift */; };
+		49A0DEC28BCAF83301D4F4A7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4374311710397B83E06DBCD /* HomeView.swift */; };
+		5417C1BCF71E861F55A1162A /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD64BB4FCFB07ADD4E0EDCC3 /* ReviewView.swift */; };
+		59DB007108293FF232481B5E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5428E020C8531E2878118314 /* Localizable.strings */; };
+		60EC74F1C91C792DEF92AC53 /* EgoStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35EC63DA5386E02154C4ECB /* EgoStyle.swift */; };
+		63AB2D7B716C668891D424FD /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7E6E578AEB3803F095C3C50D /* WhisperKit */; };
+		641144FBB05C239C56C63808 /* LocalIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA8848D9F4075B20D56D841 /* LocalIntelligence.swift */; };
+		67D76821C5AEC564730A8B41 /* FluidAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 3B09D5280FD02F40A9E3EB7E /* FluidAudio */; };
+		681F65E1A6C3CE04F516BB0E /* whisper.json in Resources */ = {isa = PBXBuildFile; fileRef = BFF051AD76959F8D59659056 /* whisper.json */; };
+		6F808C9E5C4BC76AD1156617 /* CaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABF2B72B746B2D2A78357ED /* CaptureView.swift */; };
+		703EF1BB346803D086BE667B /* russian-fixture.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED9C8ED2F375E9ACAD9F1755 /* russian-fixture.wav */; };
+		71C4D7BCEC64852438F47A71 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332D82B666B0DD3DBC7D9179 /* Journal.swift */; };
+		73FF82005A107AE0EA7EAD3B /* PrivacyShield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1196AEC7F96566E964B08DBC /* PrivacyShield.swift */; };
+		80115C56E3060DA063441DCA /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2AC437D1833423BEC535BF /* Localization.swift */; };
+		8392E953112E0A781C74BE1A /* EgoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9FDCDDD41B9F0AC30DF0B7 /* EgoApp.swift */; };
+		899DAD1A5CC91A29E7898F47 /* ModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F73FE6283CF3E60A7389B /* ModelLibrary.swift */; };
+		8D13AEE83E453C4E9080B916 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF2F642A010577B666CF56E0 /* Localizable.strings */; };
+		AD118AE7FE3206CBA8F6DC86 /* DeviceModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860F037644701F04EDC0FC1D /* DeviceModelTests.swift */; };
+		B1B5B186A3B470C488A7B9DC /* parakeet.json in Resources */ = {isa = PBXBuildFile; fileRef = EF9207AB12A164F1B6F5CA15 /* parakeet.json */; };
+		BBEC177C8DEFC0BD2A791142 /* JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E5C3304BBC41C8F7F8820 /* JournalTests.swift */; };
+		BF0879DBF2F0CCC49434F8EA /* EgoWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 08591F948CBBD4E27B231FE7 /* EgoWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C182574835497919109FC84C /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2AC437D1833423BEC535BF /* Localization.swift */; };
+		C451B2AE34B6AF9E8B6BF32C /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AF529A62DFB0E2B9615AA4 /* AppState.swift */; };
+		C6674AC893C5A887CAF6F8DB /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8DB1F9A6496A9271505A2408 /* WhisperKit */; };
+		C7ACE57D8D7D9F1CCCA6EBB0 /* LocalIntelligence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDA8848D9F4075B20D56D841 /* LocalIntelligence.swift */; };
+		CE20535A7A162CF03A0AD01D /* ModelCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4587998B0B44BE5D81DEBB49 /* ModelCheck.swift */; };
+		DE8884FD33F1AD0514E235DB /* qwen.json in Resources */ = {isa = PBXBuildFile; fileRef = C6D8324EC7696CFC0EF6B92D /* qwen.json */; };
+		DF7D89D792382AB7DE59B322 /* EgoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48823E112FD96E02DDC02EEC /* EgoUITests.swift */; };
+		E1BBDBD2CB101328BE756F44 /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 77CB48F87831FC8BB7FE259F /* MLXLMCommon */; };
+		E307393878C6625D535A1BA2 /* AppShortcuts.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3185D4CCA95FDCE5D15B8D1 /* AppShortcuts.strings */; };
+		E64164863673882B98CF8DFB /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9753012C9659930471118678 /* ExportService.swift */; };
+		EA3C1CE89D85F1C549F2C697 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB4222DC2268C871B74F31 /* ArchiveView.swift */; };
+		EFD106699761109FCF064D80 /* ModelLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F73FE6283CF3E60A7389B /* ModelLibrary.swift */; };
+		F468D68967FD2399A9D1EBA6 /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = B31615B8B08E19DB47111514 /* MLXLLM */; };
+		F9973EB490928E3A1599CD6F /* EgoWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12060E6B4654201ADF6DED40 /* EgoWidgets.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		085787639BA2CF658C7AA81C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986FCB94652C8982384E488A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 392B222E5F6AC847B32ACFC8;
+			remoteInfo = Ego;
+		};
+		316878D43995DA5A132380BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986FCB94652C8982384E488A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEECC87C2668028EC1743A34;
+			remoteInfo = EgoWidgets;
+		};
+		4B2888C456815DDC0C05E31E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 986FCB94652C8982384E488A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 392B222E5F6AC847B32ACFC8;
+			remoteInfo = Ego;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BDF33ACD656709546E71D30C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF0879DBF2F0CCC49434F8EA /* EgoWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08591F948CBBD4E27B231FE7 /* EgoWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = EgoWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1054DC0FD25FC603CBE5FB8F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1196AEC7F96566E964B08DBC /* PrivacyShield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyShield.swift; sourceTree = "<group>"; };
+		12060E6B4654201ADF6DED40 /* EgoWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgoWidgets.swift; sourceTree = "<group>"; };
+		1AA07B427E3629716516D075 /* Ego.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Ego.xcconfig; sourceTree = "<group>"; };
+		1EF66F7A2AE70BDA2BBEC614 /* Ego.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Ego.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		332D82B666B0DD3DBC7D9179 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		388E5E22432DA03BAAE5903C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		395170CA1CC3298E65BAD0B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3C4F73FE6283CF3E60A7389B /* ModelLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLibrary.swift; sourceTree = "<group>"; };
+		4587998B0B44BE5D81DEBB49 /* ModelCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCheck.swift; sourceTree = "<group>"; };
+		48823E112FD96E02DDC02EEC /* EgoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgoUITests.swift; sourceTree = "<group>"; };
+		4C971D80204C7ADF9D37CAF9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		515716ED2AD5E6B59CAC75F1 /* FluidAudio */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FluidAudio; path = Vendor/FluidAudio; sourceTree = SOURCE_ROOT; };
+		5E5426264089E3E884C2D31C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5EE9EEFF48CD528094A13B0A /* Ego.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ego.entitlements; sourceTree = "<group>"; };
+		6015C41D362C76A5B21D8711 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
+		73E225C0A642C17B72EDCDAB /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		844E7EF91ECE8AB3CC92E36B /* EgoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EgoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		860F037644701F04EDC0FC1D /* DeviceModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModelTests.swift; sourceTree = "<group>"; };
+		9753012C9659930471118678 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		9E1E5C3304BBC41C8F7F8820 /* JournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTests.swift; sourceTree = "<group>"; };
+		AD64BB4FCFB07ADD4E0EDCC3 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		AF2AC437D1833423BEC535BF /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		B08ECE2DAA34C36CE2C32466 /* EgoUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = EgoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B3B99F58AE01CEEBDA6C2C /* EgoModelCheck */ = {isa = PBXFileReference; includeInIndex = 0; path = EgoModelCheck; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35EC63DA5386E02154C4ECB /* EgoStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgoStyle.swift; sourceTree = "<group>"; };
+		B4374311710397B83E06DBCD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BDA20AC45D4F2545A5016B24 /* MLXLM */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MLXLM; path = Vendor/MLXLM; sourceTree = SOURCE_ROOT; };
+		BFF051AD76959F8D59659056 /* whisper.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = whisper.json; sourceTree = "<group>"; };
+		C6391EE509DE998E0AB95AFE /* JournalStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalStore.swift; sourceTree = "<group>"; };
+		C6D8324EC7696CFC0EF6B92D /* qwen.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = qwen.json; sourceTree = "<group>"; };
+		C9AF529A62DFB0E2B9615AA4 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CABF2B72B746B2D2A78357ED /* CaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureView.swift; sourceTree = "<group>"; };
+		D4CA2E0E4F5AAB74AA90DA58 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DB9FDCDDD41B9F0AC30DF0B7 /* EgoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EgoApp.swift; sourceTree = "<group>"; };
+		DDA8848D9F4075B20D56D841 /* LocalIntelligence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalIntelligence.swift; sourceTree = "<group>"; };
+		DE9266D2CC2ED7B7E2D26249 /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		DEA30085063BBF200B9037BE /* WhisperKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WhisperKit; path = Vendor/WhisperKit; sourceTree = SOURCE_ROOT; };
+		DECD570C0D5CFFE2BA60B24C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E460D3CDA713CD855144AD29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E4BDF1577B920BDC725BFD6B /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/AppShortcuts.strings; sourceTree = "<group>"; };
+		E8ADB98AFECED9A3E01C74E5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		ED9C8ED2F375E9ACAD9F1755 /* russian-fixture.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "russian-fixture.wav"; sourceTree = "<group>"; };
+		EF9207AB12A164F1B6F5CA15 /* parakeet.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = parakeet.json; sourceTree = "<group>"; };
+		F5FB4222DC2268C871B74F31 /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
+		FD4EC1DB1694E91E59664716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AA4E86EC07F2A8ECA272EDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2184883F8E936B53CCA6593F /* FluidAudio in Frameworks */,
+				63AB2D7B716C668891D424FD /* WhisperKit in Frameworks */,
+				F468D68967FD2399A9D1EBA6 /* MLXLLM in Frameworks */,
+				E1BBDBD2CB101328BE756F44 /* MLXLMCommon in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D1517E29CBD67F171625AF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67D76821C5AEC564730A8B41 /* FluidAudio in Frameworks */,
+				C6674AC893C5A887CAF6F8DB /* WhisperKit in Frameworks */,
+				18FBAA1672E500B0611037B1 /* MLXLLM in Frameworks */,
+				36EEE08E16B74E9A1BC195EE /* MLXLMCommon in Frameworks */,
+				22560D8767FF758161D20D94 /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		063FB55A7845D4B51A52BB5E /* EgoTests */ = {
+			isa = PBXGroup;
+			children = (
+				860F037644701F04EDC0FC1D /* DeviceModelTests.swift */,
+				9E1E5C3304BBC41C8F7F8820 /* JournalTests.swift */,
+				F0AFEFA5530967BBD5BB3A59 /* Fixtures */,
+			);
+			path = EgoTests;
+			sourceTree = "<group>";
+		};
+		077D51B7904A8D4AE04419CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EF66F7A2AE70BDA2BBEC614 /* Ego.app */,
+				B1B3B99F58AE01CEEBDA6C2C /* EgoModelCheck */,
+				844E7EF91ECE8AB3CC92E36B /* EgoTests.xctest */,
+				B08ECE2DAA34C36CE2C32466 /* EgoUITests.xctest */,
+				08591F948CBBD4E27B231FE7 /* EgoWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0DE4474DF5C97A206B073E4E = {
+			isa = PBXGroup;
+			children = (
+				CE17BE20BB7CA7A8F19948E5 /* Config */,
+				BEB1919286CEB8F813373445 /* Ego */,
+				063FB55A7845D4B51A52BB5E /* EgoTests */,
+				54A86365DAF7A4BC465391B1 /* EgoUITests */,
+				E2BDA30A99A7B28506EC4B0D /* EgoWidgets */,
+				4ED5CDF5B7C8E628D2371A52 /* ModelCheck */,
+				AD80D854CFF33F2580149065 /* Packages */,
+				077D51B7904A8D4AE04419CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FA2890EA8921B0394DB3B1E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				332D82B666B0DD3DBC7D9179 /* Journal.swift */,
+				C6391EE509DE998E0AB95AFE /* JournalStore.swift */,
+				AF2AC437D1833423BEC535BF /* Localization.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		28D49A4EB396D78EFD72162C /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				B35EC63DA5386E02154C4ECB /* EgoStyle.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		4ED5CDF5B7C8E628D2371A52 /* ModelCheck */ = {
+			isa = PBXGroup;
+			children = (
+				4587998B0B44BE5D81DEBB49 /* ModelCheck.swift */,
+			);
+			name = ModelCheck;
+			path = Tools/ModelCheck;
+			sourceTree = "<group>";
+		};
+		54A86365DAF7A4BC465391B1 /* EgoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48823E112FD96E02DDC02EEC /* EgoUITests.swift */,
+			);
+			path = EgoUITests;
+			sourceTree = "<group>";
+		};
+		76FA81B4FDBF2BFC74F122F6 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F5FB4222DC2268C871B74F31 /* ArchiveView.swift */,
+				CABF2B72B746B2D2A78357ED /* CaptureView.swift */,
+				73E225C0A642C17B72EDCDAB /* EntryView.swift */,
+				B4374311710397B83E06DBCD /* HomeView.swift */,
+				AD64BB4FCFB07ADD4E0EDCC3 /* ReviewView.swift */,
+				E8ADB98AFECED9A3E01C74E5 /* SettingsView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AD80D854CFF33F2580149065 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				515716ED2AD5E6B59CAC75F1 /* FluidAudio */,
+				BDA20AC45D4F2545A5016B24 /* MLXLM */,
+				DEA30085063BBF200B9037BE /* WhisperKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		AD9E05524B9C9779840182B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				395170CA1CC3298E65BAD0B2 /* Assets.xcassets */,
+				5EE9EEFF48CD528094A13B0A /* Ego.entitlements */,
+				FD4EC1DB1694E91E59664716 /* Info.plist */,
+				EF9207AB12A164F1B6F5CA15 /* parakeet.json */,
+				C6D8324EC7696CFC0EF6B92D /* qwen.json */,
+				BFF051AD76959F8D59659056 /* whisper.json */,
+				D3185D4CCA95FDCE5D15B8D1 /* AppShortcuts.strings */,
+				E134EA3BCA16877B63756BBE /* InfoPlist.strings */,
+				CF2F642A010577B666CF56E0 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEB1919286CEB8F813373445 /* Ego */ = {
+			isa = PBXGroup;
+			children = (
+				F1FDF67386D6E9845A1CE48D /* App */,
+				28D49A4EB396D78EFD72162C /* Design */,
+				0FA2890EA8921B0394DB3B1E /* Domain */,
+				76FA81B4FDBF2BFC74F122F6 /* Features */,
+				AD9E05524B9C9779840182B7 /* Resources */,
+				D27DBF9D421B3FBFF99A2FDF /* Services */,
+			);
+			path = Ego;
+			sourceTree = "<group>";
+		};
+		CE17BE20BB7CA7A8F19948E5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				1AA07B427E3629716516D075 /* Ego.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D27DBF9D421B3FBFF99A2FDF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DE9266D2CC2ED7B7E2D26249 /* AudioRecorder.swift */,
+				9753012C9659930471118678 /* ExportService.swift */,
+				DDA8848D9F4075B20D56D841 /* LocalIntelligence.swift */,
+				3C4F73FE6283CF3E60A7389B /* ModelLibrary.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E2BDA30A99A7B28506EC4B0D /* EgoWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				12060E6B4654201ADF6DED40 /* EgoWidgets.swift */,
+				388E5E22432DA03BAAE5903C /* Info.plist */,
+				5428E020C8531E2878118314 /* Localizable.strings */,
+			);
+			path = EgoWidgets;
+			sourceTree = "<group>";
+		};
+		F0AFEFA5530967BBD5BB3A59 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				ED9C8ED2F375E9ACAD9F1755 /* russian-fixture.wav */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		F1FDF67386D6E9845A1CE48D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C9AF529A62DFB0E2B9615AA4 /* AppState.swift */,
+				DB9FDCDDD41B9F0AC30DF0B7 /* EgoApp.swift */,
+				1196AEC7F96566E964B08DBC /* PrivacyShield.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		392B222E5F6AC847B32ACFC8 /* Ego */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F33A5839EEBBFEB6CABDA5A1 /* Build configuration list for PBXNativeTarget "Ego" */;
+			buildPhases = (
+				87E73AE6A3A65AE7F5376E23 /* Sources */,
+				FC0B514A8BE5B8884BE5E030 /* Resources */,
+				6D1517E29CBD67F171625AF5 /* Frameworks */,
+				BDF33ACD656709546E71D30C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFBFA020123895395D98F089 /* PBXTargetDependency */,
+			);
+			name = Ego;
+			packageProductDependencies = (
+				3B09D5280FD02F40A9E3EB7E /* FluidAudio */,
+				8DB1F9A6496A9271505A2408 /* WhisperKit */,
+				0D9D6AAEE2CAF335F00C6C9A /* MLXLLM */,
+				659CEB3B92E5114A0E11AC72 /* MLXLMCommon */,
+				CE7ECB25DF0A8640A9C5C964 /* ZIPFoundation */,
+			);
+			productName = Ego;
+			productReference = 1EF66F7A2AE70BDA2BBEC614 /* Ego.app */;
+			productType = "com.apple.product-type.application";
+		};
+		548230DA3A45816B2EAAF740 /* EgoModelCheck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2026017102EC7378677037AE /* Build configuration list for PBXNativeTarget "EgoModelCheck" */;
+			buildPhases = (
+				F6DE39260890995C6D16D46C /* Sources */,
+				1AA4E86EC07F2A8ECA272EDF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EgoModelCheck;
+			packageProductDependencies = (
+				5745757CF2827D163ACE0CE6 /* FluidAudio */,
+				7E6E578AEB3803F095C3C50D /* WhisperKit */,
+				B31615B8B08E19DB47111514 /* MLXLLM */,
+				77CB48F87831FC8BB7FE259F /* MLXLMCommon */,
+			);
+			productName = EgoModelCheck;
+			productReference = B1B3B99F58AE01CEEBDA6C2C /* EgoModelCheck */;
+			productType = "com.apple.product-type.tool";
+		};
+		BEECC87C2668028EC1743A34 /* EgoWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F67B4334DF38857954C959DA /* Build configuration list for PBXNativeTarget "EgoWidgets" */;
+			buildPhases = (
+				1296B5937F6B8B6A63C4F991 /* Sources */,
+				CF6EC4799E2D0958E48423B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EgoWidgets;
+			packageProductDependencies = (
+			);
+			productName = EgoWidgets;
+			productReference = 08591F948CBBD4E27B231FE7 /* EgoWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DEE34E6F037E43C86C8E4BBE /* EgoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01205F8D3E82017CAC8DC689 /* Build configuration list for PBXNativeTarget "EgoUITests" */;
+			buildPhases = (
+				903C0507BAC9DF8B36C2CB0C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FE00C76FA5436BFC1B962E /* PBXTargetDependency */,
+			);
+			name = EgoUITests;
+			packageProductDependencies = (
+			);
+			productName = EgoUITests;
+			productReference = B08ECE2DAA34C36CE2C32466 /* EgoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E4E1EA8667FA59DD57B5A7BC /* EgoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E735C5E1B45E05949A2257 /* Build configuration list for PBXNativeTarget "EgoTests" */;
+			buildPhases = (
+				E8FAA7AD648B2D511B0A9251 /* Sources */,
+				8F61AB7697C5B2AD30FBC944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				19234E6223440055EE822A12 /* PBXTargetDependency */,
+			);
+			name = EgoTests;
+			packageProductDependencies = (
+			);
+			productName = EgoTests;
+			productReference = 844E7EF91ECE8AB3CC92E36B /* EgoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		986FCB94652C8982384E488A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					392B222E5F6AC847B32ACFC8 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					548230DA3A45816B2EAAF740 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					BEECC87C2668028EC1743A34 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					DEE34E6F037E43C86C8E4BBE = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = 392B222E5F6AC847B32ACFC8;
+					};
+					E4E1EA8667FA59DD57B5A7BC = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AE97E1A352BDA0BA81BA8477 /* Build configuration list for PBXProject "Ego" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ru,
+			);
+			mainGroup = 0DE4474DF5C97A206B073E4E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				96CCED39F4611A498A3CF8AB /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				C2AA458344B1DE0014356004 /* XCLocalSwiftPackageReference "Vendor/FluidAudio" */,
+				73BFB26133080B887504B3EB /* XCLocalSwiftPackageReference "Vendor/MLXLM" */,
+				A53678F02B367CD370D01CFF /* XCLocalSwiftPackageReference "Vendor/WhisperKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 077D51B7904A8D4AE04419CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				392B222E5F6AC847B32ACFC8 /* Ego */,
+				BEECC87C2668028EC1743A34 /* EgoWidgets */,
+				E4E1EA8667FA59DD57B5A7BC /* EgoTests */,
+				DEE34E6F037E43C86C8E4BBE /* EgoUITests */,
+				548230DA3A45816B2EAAF740 /* EgoModelCheck */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F61AB7697C5B2AD30FBC944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				703EF1BB346803D086BE667B /* russian-fixture.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF6EC4799E2D0958E48423B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DB007108293FF232481B5E /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC0B514A8BE5B8884BE5E030 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E307393878C6625D535A1BA2 /* AppShortcuts.strings in Resources */,
+				1DAD543318CB3CA4A74E262E /* Assets.xcassets in Resources */,
+				1E2DF5B27BB39FF6CA758989 /* InfoPlist.strings in Resources */,
+				8D13AEE83E453C4E9080B916 /* Localizable.strings in Resources */,
+				B1B5B186A3B470C488A7B9DC /* parakeet.json in Resources */,
+				DE8884FD33F1AD0514E235DB /* qwen.json in Resources */,
+				681F65E1A6C3CE04F516BB0E /* whisper.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1296B5937F6B8B6A63C4F991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9973EB490928E3A1599CD6F /* EgoWidgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E73AE6A3A65AE7F5376E23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C451B2AE34B6AF9E8B6BF32C /* AppState.swift in Sources */,
+				EA3C1CE89D85F1C549F2C697 /* ArchiveView.swift in Sources */,
+				10D386CDE0029F2A00E34476 /* AudioRecorder.swift in Sources */,
+				6F808C9E5C4BC76AD1156617 /* CaptureView.swift in Sources */,
+				8392E953112E0A781C74BE1A /* EgoApp.swift in Sources */,
+				60EC74F1C91C792DEF92AC53 /* EgoStyle.swift in Sources */,
+				26837C6CA192059A8E1BDB74 /* EntryView.swift in Sources */,
+				E64164863673882B98CF8DFB /* ExportService.swift in Sources */,
+				49A0DEC28BCAF83301D4F4A7 /* HomeView.swift in Sources */,
+				43F5C9BD28F759CEF6EA530D /* Journal.swift in Sources */,
+				31EB0E88D51B26C7FD8F9C80 /* JournalStore.swift in Sources */,
+				C7ACE57D8D7D9F1CCCA6EBB0 /* LocalIntelligence.swift in Sources */,
+				80115C56E3060DA063441DCA /* Localization.swift in Sources */,
+				EFD106699761109FCF064D80 /* ModelLibrary.swift in Sources */,
+				73FF82005A107AE0EA7EAD3B /* PrivacyShield.swift in Sources */,
+				5417C1BCF71E861F55A1162A /* ReviewView.swift in Sources */,
+				109E7A37AFB724C0C1302917 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		903C0507BAC9DF8B36C2CB0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7D89D792382AB7DE59B322 /* EgoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8FAA7AD648B2D511B0A9251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD118AE7FE3206CBA8F6DC86 /* DeviceModelTests.swift in Sources */,
+				BBEC177C8DEFC0BD2A791142 /* JournalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DE39260890995C6D16D46C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C4D7BCEC64852438F47A71 /* Journal.swift in Sources */,
+				641144FBB05C239C56C63808 /* LocalIntelligence.swift in Sources */,
+				C182574835497919109FC84C /* Localization.swift in Sources */,
+				CE20535A7A162CF03A0AD01D /* ModelCheck.swift in Sources */,
+				899DAD1A5CC91A29E7898F47 /* ModelLibrary.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19234E6223440055EE822A12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 392B222E5F6AC847B32ACFC8 /* Ego */;
+			targetProxy = 4B2888C456815DDC0C05E31E /* PBXContainerItemProxy */;
+		};
+		A6FE00C76FA5436BFC1B962E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 392B222E5F6AC847B32ACFC8 /* Ego */;
+			targetProxy = 085787639BA2CF658C7AA81C /* PBXContainerItemProxy */;
+		};
+		EFBFA020123895395D98F089 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEECC87C2668028EC1743A34 /* EgoWidgets */;
+			targetProxy = 316878D43995DA5A132380BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5428E020C8531E2878118314 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C971D80204C7ADF9D37CAF9 /* en */,
+				1054DC0FD25FC603CBE5FB8F /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CF2F642A010577B666CF56E0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E5426264089E3E884C2D31C /* en */,
+				D4CA2E0E4F5AAB74AA90DA58 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D3185D4CCA95FDCE5D15B8D1 /* AppShortcuts.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6015C41D362C76A5B21D8711 /* en */,
+				E4BDF1577B920BDC725BFD6B /* ru */,
+			);
+			name = AppShortcuts.strings;
+			sourceTree = "<group>";
+		};
+		E134EA3BCA16877B63756BBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E460D3CDA713CD855144AD29 /* en */,
+				DECD570C0D5CFFE2BA60B24C /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0191FED8A29E990AA867DCA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA07B427E3629716516D075 /* Ego.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0277A41E07D20CA4F861D65A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA07B427E3629716516D075 /* Ego.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0F34D4544019E145637B01C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(EGO_BUNDLE_ID_PREFIX).EgoUITests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ego;
+			};
+			name = Debug;
+		};
+		2ED2DD33460ED10EF5EF5E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(EGO_BUNDLE_ID_PREFIX).EgoUITests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ego;
+			};
+			name = Release;
+		};
+		3FFEE74D8FA2E47EDBB86696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ego/Resources/Ego.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Ego/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(EGO_BUNDLE_ID_PREFIX).ego";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		545067EDFDA2C93FDF3C45A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(EGO_BUNDLE_ID_PREFIX).EgoTests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ego.app/Ego";
+			};
+			name = Debug;
+		};
+		66218CB4C3037DAB04FC7134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EgoWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(EGO_BUNDLE_ID_PREFIX).ego.widgets";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6EFBA671634F72291B624671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(EGO_BUNDLE_ID_PREFIX).ego.modelcheck";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8DD4D713FAFA08D1ED62696F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EgoWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(EGO_BUNDLE_ID_PREFIX).ego.widgets";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94B8DD387821EAA78D1BCEF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(EGO_BUNDLE_ID_PREFIX).EgoTests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ego.app/Ego";
+			};
+			name = Release;
+		};
+		A8474ABAAB9DA8F07890F6D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Ego/Resources/Ego.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Ego/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "$(EGO_BUNDLE_ID_PREFIX).ego";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E0D459F4C865368F7768E8FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(EGO_BUNDLE_ID_PREFIX).ego.modelcheck";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01205F8D3E82017CAC8DC689 /* Build configuration list for PBXNativeTarget "EgoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F34D4544019E145637B01C3 /* Debug */,
+				2ED2DD33460ED10EF5EF5E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2026017102EC7378677037AE /* Build configuration list for PBXNativeTarget "EgoModelCheck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0D459F4C865368F7768E8FA /* Debug */,
+				6EFBA671634F72291B624671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AE97E1A352BDA0BA81BA8477 /* Build configuration list for PBXProject "Ego" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0191FED8A29E990AA867DCA2 /* Debug */,
+				0277A41E07D20CA4F861D65A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E0E735C5E1B45E05949A2257 /* Build configuration list for PBXNativeTarget "EgoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545067EDFDA2C93FDF3C45A3 /* Debug */,
+				94B8DD387821EAA78D1BCEF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F33A5839EEBBFEB6CABDA5A1 /* Build configuration list for PBXNativeTarget "Ego" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FFEE74D8FA2E47EDBB86696 /* Debug */,
+				A8474ABAAB9DA8F07890F6D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F67B4334DF38857954C959DA /* Build configuration list for PBXNativeTarget "EgoWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DD4D713FAFA08D1ED62696F /* Debug */,
+				66218CB4C3037DAB04FC7134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		73BFB26133080B887504B3EB /* XCLocalSwiftPackageReference "Vendor/MLXLM" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/MLXLM;
+		};
+		A53678F02B367CD370D01CFF /* XCLocalSwiftPackageReference "Vendor/WhisperKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/WhisperKit;
+		};
+		C2AA458344B1DE0014356004 /* XCLocalSwiftPackageReference "Vendor/FluidAudio" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Vendor/FluidAudio;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96CCED39F4611A498A3CF8AB /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.20;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D9D6AAEE2CAF335F00C6C9A /* MLXLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MLXLLM;
+		};
+		3B09D5280FD02F40A9E3EB7E /* FluidAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FluidAudio;
+		};
+		5745757CF2827D163ACE0CE6 /* FluidAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FluidAudio;
+		};
+		659CEB3B92E5114A0E11AC72 /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MLXLMCommon;
+		};
+		77CB48F87831FC8BB7FE259F /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MLXLMCommon;
+		};
+		7E6E578AEB3803F095C3C50D /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WhisperKit;
+		};
+		8DB1F9A6496A9271505A2408 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WhisperKit;
+		};
+		B31615B8B08E19DB47111514 /* MLXLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MLXLLM;
+		};
+		CE7ECB25DF0A8640A9C5C964 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 96CCED39F4611A498A3CF8AB /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 986FCB94652C8982384E488A /* Project object */;
+}

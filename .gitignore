@@ -1,0 +1,11 @@
+.DS_Store
+.build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+work/
+*.mobileprovision
+*.p12
+
+# Machine-local signing settings
+Config/Local.xcconfig

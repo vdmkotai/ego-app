@@ -1,0 +1,7 @@
+// Copy to Config/Local.xcconfig. That file is ignored by Git.
+
+// Reverse-DNS prefix for every bundle identifier: <prefix>.ego, <prefix>.ego.widgets, ...
+EGO_BUNDLE_ID_PREFIX = com.yourname
+
+// Your Apple Developer Team ID (Xcode > Settings > Accounts).
+DEVELOPMENT_TEAM = ABCDE12345
